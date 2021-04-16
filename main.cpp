@@ -2,21 +2,18 @@
 #include <string>
 using namespace std;
 
+
 int main() {
-string v;
- cout << "d" << endl;
- cin >> v;
+string P;
 
-for( int i =0; i <v.length(); i++){
-  if( v[i] == 'a'){
-    cout<< "#2=1" << endl;
-  } else if (v[i] == 'b'){
-    cout << "#2 = 2" << endl;
-  }else if ( v[i] == 'c'){
-    cout <<"#2=3";
-  }
+ cout << "Digite uma palavra de no maxímo 50 caracteres" << endl;
+ cin >> P;
 
-}
+ if(P.length() > 49){
+   cout <<" sua pavavra foi limitada em 50 caracteres"<< endl;
+   P.erase(49);
+ }
+ cout << " Sua Palavra é : " << P << endl;
 
 
 }
